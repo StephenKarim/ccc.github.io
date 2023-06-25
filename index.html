@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="indexteststyle.css">
+    <script src="index_func.js"></script>  
+    <script src="webcomponents-loader.js"></script> 
+    <script type="module" src="model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+    <header class="header"> 
+      <model-viewer class="podium" src="Models/pedit3/Pedit3.gltf" 
+      alt="A 3D model of a podium" shadow-intensity="1"
+      rotation-per-second="30deg" auto-rotate-delay="30">      
+      </model-viewer>
+      <!-- <div class="login-register3">
+        <button class="login">Menu</button>        
+      </div> -->        
+      <model-viewer class="logoo" src="Models/globe4/globe4.gltf" 
+      alt="Logo" class="organisation-name-img" 
+      auto-rotate-delay="30" rotation-per-second="40deg" 
+      animation-name="globeRotate" autoplay> </model-viewer>
+      <model-viewer class="bible" src="Models/door/scene.gltf" 
+      alt="A 3D model of a podium" shadow-intensity="1"
+      rotation-per-second="30deg" auto-rotate-delay="30">      
+      </model-viewer>
+      <!-- <div class="login-register">
+        <button class="login">Login</button>
+        <div class="line"></div>
+        <button class="register">Register</button>
+      </div> -->
+      <!-- <div class="login-register2">
+        <button class="login">Login</button>
+        <div class="line"></div>
+        <button class="register">Register</button>
+      </div> -->
+    </header>
+
+    <div class="header2"></div>
+
+    <div class="hero">
+      <video autoplay loop muted id="background-video">
+        <source src="Videos/video6.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <hr id="line1">
+    
+    <div class="placeholder">Announcments</div>
+    <div class="shalk">plceholder Section</div>
+    <div class="tyre">plceholder Section</div> 
+
+    <div class="overlay" id="menuOverlay">
+      <div class="menu">
+        <ul>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="aboutUS.html">About US</a></li>
+          <li><button id="closeOverlayButton" class="close-button">X</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Events</a>
+        <a href="#">Ministries</a>
+        <a href="#">Sermons</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-info">
+        &copy; 2023 Church Name. All rights reserved. | Address, City, State | Phone: (123) 456-7890
+      </div>
+    </footer>
+
+  
+</body>
+</html>

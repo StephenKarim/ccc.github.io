@@ -1,0 +1,383 @@
+.header {
+    display: grid; 
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-areas:
+        "model logoo bible" ;
+        /* "login-register3 logoo login-register2";   */
+      z-index: 998;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
+      backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+      -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+      z-index: 999;    
+      opacity: 0.7;     
+      height: 10vw;    
+  }
+/* 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%; */ 
+
+  .header2 {
+    position: fixed;
+    z-index: 2;
+    top: 10vw;
+    left: 31%;
+    width: 39vw;
+    height: 8vw;
+    background-color: rgba(0, 0, 0, 0.5); /* Set the background color with transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    opacity: 0.7; 
+  }
+  
+  .hero {
+    /* Existing hero styles */
+    
+    z-index: 1;
+  }
+
+  model-viewer{   
+    --progress-bar-color: transparent; 
+    background-color: transparent;
+    grid-area: model;
+    cursor: pointer;
+    width: 9vw;
+    height: 9vw; 
+    margin-left: 10.5vw;       
+  }
+  
+  .logoo{
+    grid-area: logoo;
+    width: 40vw;
+    height: 40vw; 
+    background-color: transparent;
+    margin-top: -10.9vw;
+    margin-left: 2vw; 
+  }
+  
+  .podium {
+    margin-top: 0.5vw;
+    margin-left: 10vw;
+  }
+
+  .bible {
+    grid-area: bible;
+    height: 8vw;
+    width: 10vw;
+    margin-top: 1vw;
+  }
+  
+  .login-register {
+    grid-area: login-register;
+    margin-top: -18.5vw;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8vw
+  }
+  
+  .login,
+  .register {
+    padding: 0.5vw 0.5vw;
+    margin-top: 0vw;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .login-register button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Garamond', serif;
+    font-size: 2vw;
+    font-weight: bold; 
+    color: #fff;    
+  }
+  
+  .login-register .line {
+    width: 0.1vw;
+    height: 1.5vw;
+    background-color: #fff;
+    margin-right: -1.2vw;
+    margin-left: -1.2vw; 
+  }
+  
+  .login,
+  .register,
+  .login-register .line {
+    margin-top: -1vw;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero, .placeholder, .shalk, .tyre {
+    height: 200px;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+    overflow: hidden;
+  }
+  
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .hero {
+    background-color: #f0f0f0;
+  }
+  
+  .placeholder {
+    background-color: #e0e0e0;
+  }
+  
+  .shalk {
+    background-color: #d0d0d0;
+  }
+  
+  .tyre {
+    background-color: #c0c0c0;
+  }
+  
+  @media (min-width: 601px) {
+    
+  }
+  
+  /* @media (max-width: 600px) {
+    .logoo{
+      grid-area: logoo;
+      width: 230px;
+      height: 230px; 
+      background-color: transparent;
+      margin-top: -50px;
+      margin-left: 2vw; 
+    }
+
+    .header {
+      height: 85px;      
+    }
+
+    .header2 {
+      height: 40px;
+      width: 220px;
+      
+      top: 85px;
+    }
+  
+  }
+
+  @media (max-width: 550px) {
+    
+    .header2 {      
+      left: 29%;     
+    }
+  
+  }
+
+  @media (max-width: 585px) {
+    
+    .header2 {      
+      left: 30%;     
+    }
+  
+  } */
+  
+  @font-face {
+    font-family: 'Fette Fraktur';
+    src: url('Fonts/fette-unz-fraktur.ttf');
+    
+  }
+  
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+  }
+  
+  .menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    background-color: transparent;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  .footer {
+    background-color: slategray;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    grid-column: 1 / -1;
+  }
+  
+  /* CSS for the footer links */
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* CSS for the footer social icons */
+  .footer .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 20px;
+  }
+  
+  #line1 {
+    width: 80vw;
+    margin-top: 0.45vw;
+  }
+
+
+  .login-register2 {
+    grid-area: login-register2;
+    margin-top: -18.5vw;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8vw
+  }
+  
+  .login,
+  .register {
+    padding: 1vw 1vw;
+    margin-top: 0vw;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .login-register2 button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Garamond', serif;
+    font-size: 2vw;
+    font-weight: bold; 
+    color: #fff;    
+  }
+  
+  .login-register2 .line {
+    width: 0.1vw;
+    height: 1.5vw;
+    background-color: #fff;
+    margin-right: 0vw;
+    margin-left: 0vw; 
+  }
+  
+  .login,
+  .register,
+  .login-register3 .line {
+    margin-top: -1vw;
+  }
+
+  .login-register3 {
+    grid-area: login-register3;
+    margin-top: 8vw;
+    margin-left: 5vw;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+   
+  }
+  
+  .login,
+  .register {
+    padding: 1vw 1vw;
+    margin-top: 0vw;
+    border: none;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .login-register3 button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Garamond', serif;
+    font-size: 2vw;
+    font-weight: bold; 
+    color: #fff;    
+  }
+  
+  .login-register3 .line {
+    width: 0.1vw;
+    height: 1.5vw;
+    background-color: #fff;
+    margin-right: 0vw;
+    margin-left: 0vw; 
+  }
+  
+  .login,
+  .register,
+  .login-register3 .line {
+    margin-top: -1vw;
+  }
+    
